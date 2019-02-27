@@ -3,7 +3,11 @@ import logo from '../svg/logo.svg';
 import '../css/main.css';
 import '../css/fonts.css';
 import '../css/App.css';
-
+// Font Awesome Imports
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons'
+library.add(faChevronCircleDown)
 
 class App extends Component {
 	render() {
@@ -30,8 +34,8 @@ class App extends Component {
 					</div>
 
 					<div>
-						<a className='more-content'>
-							<img alt='downarrow button' />
+						<a className='more-content' href=''>
+							<FontAwesomeIcon icon="chevron-circle-down" />
 						</a>
 					</div>
 				</div>
@@ -81,7 +85,7 @@ class App extends Component {
 						Duis at tellus at urna condimentum mattis pellentesque. Enim lobortis scelerisque fermentum dui faucibus. Diam maecenas ultricies mi eget mauris pharetra. A diam sollicitudin tempor id eu nisl nunc mi. Imperdiet dui accumsan sit amet nulla facilisi. Id interdum velit laoreet id donec ultrices. Eget nulla facilisi etiam dignissim. Convallis convallis tellus id interdum velit laoreet id donec. Fermentum posuere urna nec tincidunt. Pellentesque nec nam aliquam sem et tortor consequat. Euismod elementum nisi quis eleifend quam. Volutpat est velit egestas dui id ornare arcu odio ut. Cursus eget nunc scelerisque viverra mauris. Tellus elementum sagittis vitae et leo duis. In nisl nisi scelerisque eu ultrices vitae auctor eu. Facilisi nullam vehicula ipsum a arcu cursus vitae congue. Imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor. Arcu cursus vitae congue mauris rhoncus aenean.
 			</p>
 				</div>
-			</div>
+			</div >
 		);
 	}
 }
