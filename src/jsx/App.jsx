@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import logo from '../svg/logo.svg';
+
+// CSS files
 import '../css/main.css';
 import '../css/fonts.css';
-import '../css/App.css';
-// Font Awesome Imports
+
+// FontAwesome imports
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons'
@@ -12,7 +14,7 @@ library.add(faChevronCircleDown)
 class App extends Component {
 	render() {
 		return (
-			<div className="App">
+			<div>
 				<nav className='navbar'>
 					<a className='logo' href='./'><img alt='logo' /></a>
 					<span className='spacing'></span>
@@ -22,7 +24,7 @@ class App extends Component {
 
 				<div className='hero'>
 					<div>
-						<img src={logo} className="App-logo" alt="logo" />
+						<img src={logo} className='logo' alt='logo' />
 						<h1>Suprez!</h1>
 						<h4>Not just presentations. Experiences.</h4>
 					</div>
@@ -30,12 +32,12 @@ class App extends Component {
 					<div>
 						<a href='presentation.html' className='call-to-action button'>
 							Start Presentation
-				</a>
+						</a>
 					</div>
 
 					<div>
 						<a className='more-content' href=''>
-							<FontAwesomeIcon icon="chevron-circle-down" />
+							<FontAwesomeIcon icon='chevron-circle-down' />
 						</a>
 					</div>
 				</div>
