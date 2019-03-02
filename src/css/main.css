@@ -47,7 +47,7 @@ h1 {
 
 h2 {
 	color: var(--yel-bright);
-	font-size: 8em;
+	font-size: 9em;
 }
 
 h3 {
@@ -106,7 +106,9 @@ p {
 	padding: 6px 12px 6px 12px;
 	border-radius: 6px;
 	background-color: var(--yel-main);
-	box-shadow: 0 6px var(--yel-shade);
+	box-shadow:
+		0 6px var(--yel-shade),
+		0 6px 6px black;
 	text-decoration: none;
 	border-style: none;
 	border-width: 0;
@@ -125,7 +127,9 @@ p {
 .button:active,
 .button.active {
 	background-color: var(--yel-light);
-	box-shadow: 0 2px var(--yel-shade);
+	box-shadow:
+		0 2px var(--yel-shade),
+		0 2px 18px var(--yel-bright);
 	transform: translateY(4px);
 }
 
@@ -134,13 +138,17 @@ p {
 	background-color: var(--yel-main);
 	border: none;
 	border-radius: 18px;
-	box-shadow: 0 18px var(--yel-shade);
+	box-shadow:
+		0 18px var(--yel-shade),
+		0 18px 18px black;;
 }
 
 .call-to-action:active,
 .call-to-action.active {
 	background-color: var(--yel-light);
-	box-shadow: 0 6px var(--yel-shade);
+	box-shadow:
+		0 6px var(--yel-shade),
+		0 6px 54px var(--yel-bright);
 	transform: translateY(12px);
 }
 
@@ -153,8 +161,24 @@ p {
 	width: 400px
 }
 
-.logo-small {
-	width: 40px;
+.logo-small img{
+	height: 80px;
+	width: 80px;
+}
+
+.brand {
+	color: transparent;
+	text-shadow:
+		 0px  0px  0px var(--yel-bright),
+		 1px  1px  1px var(--yel-light),
+		 3px  3px  3px var(--yel-main),
+		 6px  6px  6px var(--yel-shade),
+		 9px  9px  9px var(--yel-darker);
+
+
+
+
+
 }
 
 #content {

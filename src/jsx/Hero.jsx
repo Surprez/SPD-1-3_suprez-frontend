@@ -19,9 +19,10 @@ const Hero = (props) => {
 				<img src={logo} className='logo' alt='logo' />
 
 				<header>
-					<h1>Suprez</h1>
+					<h1 className='brand'>Suprez</h1>
 					<h2 className='subheading'>Not just presentations.<br /><em>Experiences.</em></h2>
 				</header>
+
 			</div>
 
 			<div>
