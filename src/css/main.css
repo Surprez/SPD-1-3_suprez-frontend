@@ -152,7 +152,6 @@ p {
 	transform: translateY(12px);
 }
 
-
 .button:hover {
 	cursor: pointer;
 }
@@ -174,11 +173,6 @@ p {
 		 3px  3px  3px var(--yel-main),
 		 6px  6px  6px var(--yel-shade),
 		 9px  9px  9px var(--yel-darker);
-
-
-
-
-
 }
 
 #content {

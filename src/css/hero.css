@@ -36,7 +36,7 @@
 	background-size: cover;
 	background-color: grey;
 	background-attachment: fixed;
-	height: calc(100vh);
+	height: 100vh;
 	background-image: url('../img/fireworks01-dark.jpg');
 }
 
@@ -48,12 +48,19 @@
 .logo {
 	position: absolute;
 	opacity: 0.35;
-	left: calc(50vw - 220px);
+	left: calc(50% - 220px);
 	top: 65px;
+	z-index: inherit 0;
 }
 
 .more {
-	font-size: 250px;
+	color: var(--grn-bright);
+	font-size: 12em;
+	text-shadow: 5px 5px 5px white;
+	position: absolute;
+	bottom: 0;
+	left: calc(50vw - 0.5em - 38px);
+
 }
 
 
