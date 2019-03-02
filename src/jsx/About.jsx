@@ -24,23 +24,23 @@ return (
 		startup’s “lightbulb moment”? What about that “spark” that drives and motivates you?</p>
 
 	<h3>Meet the Team</h3>
-	<div id = 'team-photo'>
+	<div id='team-photo'>
 		<img src={Keoni}></img>
 		<p>Keoni Murray</p>
 	</div>
-	<div id = 'team-photo'>
+	<div id='team-photo'>
 		<img src={Nolan}></img>
 		<p>Nolan Kovacik</p>
 	</div>
-	<div id = 'team-photo'>
+	<div id='team-photo'>
 		<img src={Raymond}></img>
 		<p>Raymond Wu</p>
 	</div>
-	<div id = 'team-photo'>
+	<div id='team-photo'>
 		<img src={KJ}></img>
 		<p>KJ Wilson</p>
 	</div>
-	
+
 	<p>Duis at tellus at urna condimentum mattis pellentesque. Enim lobortis scelerisque fermentum dui faucibus. Diam
 		maecenas ultricies mi eget mauris pharetra. A diam sollicitudin tempor id eu nisl nunc mi. Imperdiet dui accumsan sit
 		amet nulla facilisi. Id interdum velit laoreet id donec ultrices. Eget nulla facilisi etiam dignissim. Convallis
