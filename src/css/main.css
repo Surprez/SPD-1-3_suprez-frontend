@@ -4,7 +4,7 @@
 	--blu-bright: #585A96;
 	--blu-light: #343677;
 	--blu-main: #1B1B5A;
-	--blu-shade: #1B1B5A;
+	--blu-shade: #0A0D3E;
 	--blu-darker: #09093B;
 
 	--prp-bright: #774E90;
@@ -100,8 +100,8 @@ p {
 	color: inherit;
 	padding: 6px 12px 6px 12px;
 	border-radius: 6px;
-	background-color: var(--grn-main);
-	box-shadow: 0 6px var(--grn-shade);
+	background-color: var(--yel-main);
+	box-shadow: 0 6px var(--yel-shade);
 	text-decoration: none;
 	border-style: none;
 	border-width: 0;
@@ -112,30 +112,30 @@ p {
  button.hover,
 .button:hover,
 .button.hover {
-	background-color: var(--grn-light)
+	background-color: var(--yel-light)
 }
 
  button:active,
  button.active,
 .button:active,
 .button.active {
-	background-color: var(--grn-light);
-	box-shadow: 0 2px var(--grn-shade);
+	background-color: var(--yel-light);
+	box-shadow: 0 2px var(--yel-shade);
 	transform: translateY(4px);
 }
 
 .call-to-action {
 	padding: 30px;
-	background-color: var(--grn-main);
+	background-color: var(--yel-main);
 	border: none;
 	border-radius: 18px;
-	box-shadow: 0 18px var(--grn-shade);
+	box-shadow: 0 18px var(--yel-shade);
 }
 
 .call-to-action:active,
 .call-to-action.active {
-	background-color: var(--grn-light);
-	box-shadow: 0 6px var(--grn-shade);
+	background-color: var(--yel-light);
+	box-shadow: 0 6px var(--yel-shade);
 	transform: translateY(12px);
 }
 
