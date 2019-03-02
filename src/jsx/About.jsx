@@ -26,29 +26,20 @@ return (
 	<h3>Meet the Team</h3>
 	<div id='team-photo'>
 		<img src={Keoni}></img>
-		<p>Keoni Murray</p>
+		<p class = 'team-desc'>Keoni Murray</p>
 	</div>
 	<div id='team-photo'>
 		<img src={Nolan}></img>
-		<p>Nolan Kovacik</p>
+		<p class = 'team-desc'>Nolan Kovacik</p>
 	</div>
 	<div id='team-photo'>
 		<img src={Raymond}></img>
-		<p>Raymond Wu</p>
+		<p class = 'team-desc'>Raymond Wu</p>
 	</div>
 	<div id='team-photo'>
 		<img src={KJ}></img>
-		<p>KJ Wilson</p>
+		<p class = 'team-desc'>KJ Wilson</p>
 	</div>
-
-	<p>Duis at tellus at urna condimentum mattis pellentesque. Enim lobortis scelerisque fermentum dui faucibus. Diam
-		maecenas ultricies mi eget mauris pharetra. A diam sollicitudin tempor id eu nisl nunc mi. Imperdiet dui accumsan sit
-		amet nulla facilisi. Id interdum velit laoreet id donec ultrices. Eget nulla facilisi etiam dignissim. Convallis
-		convallis tellus id interdum velit laoreet id donec. Fermentum posuere urna nec tincidunt. Pellentesque nec nam
-		aliquam sem et tortor consequat. Euismod elementum nisi quis eleifend quam. Volutpat est velit egestas dui id ornare
-		arcu odio ut. Cursus eget nunc scelerisque viverra mauris. Tellus elementum sagittis vitae et leo duis. In nisl nisi
-		scelerisque eu ultrices vitae auctor eu. Facilisi nullam vehicula ipsum a arcu cursus vitae congue. Imperdiet sed
-		euismod nisi porta lorem mollis aliquam ut porttitor. Arcu cursus vitae congue mauris rhoncus aenean.</p>
 </div>
 );
 }
