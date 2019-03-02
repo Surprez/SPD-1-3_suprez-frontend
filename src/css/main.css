@@ -1,0 +1,85 @@
+:root {
+	--color-subtle: white;
+	--color-middle: lightblue;
+	--color-bright: blue;
+}
+
+html, body {
+	color: var(--color-subtle);
+	font-size: 100%;
+	margin: 20px;
+	padding: 0;
+	background-color: #111;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.5em 0;
+}
+
+h1 {
+	color: var(--color-bright);
+	font-size: 12em;
+}
+
+h2 {
+	color: var(--color-bright);
+	font-size: 6em;
+}
+
+h3 {
+	color: var(--color-bright);
+	font-size: 4em;
+}
+
+h4 {
+	color: var(--color-middle);
+	font-size: 2.5em;
+}
+
+h5 {
+	color: var(--color-middle);
+	font-size: 1.5em;
+}
+
+h6 {
+	color: var(--color-middle);
+	font-size: 1em;
+}
+
+.navbar {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	position: -webkit-sticky;
+	position: sticky;
+	background-color: green;
+	padding: 6px;
+	top: 0;
+}
+
+.navbar > .spacing {
+	flex-grow: 1;
+}
+
+button, .button {
+	font: inherit;
+	color: inherit;
+	padding: 5px 10px 5px 10px;
+	border-radius: 5px;
+	background-color: darkgreen;
+	text-decoration: none;
+	border-style: none;
+	border-width: 0;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.logo {
+	width: 400px
+}
+
+.logo-small {
+	width: 40px;
+}

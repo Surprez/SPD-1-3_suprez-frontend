@@ -1,0 +1,16 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import logo_small from '../svg/logo-small.svg'
+
+const Navbar = (props) => {
+	return (
+		<nav className='navbar'>
+			<span><Link className='logo-small' to='/'><img src={logo_small} alt='logo' /></Link></span>
+			<span className='spacing'></span>
+			<span><Link className='button' to='/login'>Log In</Link></span>
+			<span><Link className='button' to='/signup'>Sign Up</Link></span>
+		</nav >
+	)
+}
+
+export default Navbar
