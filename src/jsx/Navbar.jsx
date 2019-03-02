@@ -1,17 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
+import logo_small from '../svg/logo-small.svg'
 
-class Login extends Component {
-	render() {
-		return (
-			<nav className='navbar'>
-				<Link className='logo' to='/'><img alt='logo' /></Link>
-				<span className='spacing'></span>
-				<Link className='button' to='/login'>Log In</Link>
-				<Link className='button' to='/signup'>Sign Up</Link>
-			</nav>
-		)
-	}
+const Navbar = (props) => {
+	return (
+		<nav className='navbar'>
+			<span><Link className='logo-small' to='/'><img src={logo_small} alt='logo' /></Link></span>
+			<span className='spacing'></span>
+			<span><Link className='button' to='/login'>Log In</Link></span>
+			<span><Link className='button' to='/signup'>Sign Up</Link></span>
+		</nav >
+	)
 }
 
-export default Login
+export default Navbar
