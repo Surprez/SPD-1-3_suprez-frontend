@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import SpeechRecognition from "react-speech-recognition";
 // import { worker } from "cluster";
 
-class Dictaphone extends Component {
+class Speak extends Component {
 	constructor(props) {
 		super(props);
 
@@ -14,28 +14,58 @@ class Dictaphone extends Component {
 	// when you end listening,
 	// update state with final transcript
 	// pass this function to the element that does this worker, via props
-	//	 }
 
 	// when you want to get the end of transcript
 	// update state with that transcipt setState({transcript: transcript})
 
 	render() {
-		const {
-			//	 transcript,
-			resetTranscript,
-			browserSupportsSpeechRecognition,
-			startListening,
-			stopListening,
-			finalTranscript
-		} = this.props;
+		let
+			{
+				transcript,
+				resetTranscript,
+				browserSupportsSpeechRecognition,
+				startListening,
+				stopListening,
+				finalTranscript
+			} = this.props;
 
 		if (!browserSupportsSpeechRecognition) {
 			return null;
 		}
-		console.log("the state is:", this.state.transcript);
+
+		const scriptArray = transcript.split(' ')
+		const myWord = scriptArray[scriptArray.length - 1]
+		const prvWord = scriptArray[scriptArray.length - 2]
+		let goAPI = false
+
+		// warning! PLACEHOLDER must be replaced with user's list.
+		const PLACEHOLDER = ['banana', 'bananas']
+		const MAGICWORD = 'hello'
+
+		if (myWord === MAGICWORD) {
+			// this checks for the magic word
+			console.log(prvWord)
+			console.log('\n')
+			goAPI = prvWord
+		} else {
+			for (let keyWord of PLACEHOLDER) {
+				if (myWord === keyWord) {
+					// this checks for keywords
+					console.log(keyWord)
+					console.log('\n')
+					goAPI = keyWord
+					break
+				}
+			}
+		}
+
+		if (goAPI) {
+			alert(`now searching ${goAPI} in api...`)
+		}
+		console.log(myWord)
 
 		return (
-			<div className='placeholderButtonArray'>
+			<div className='placeholderButtonArray' >
 				<button onClick={startListening}>Start listening</button>
 				<button
 					onClick={() => {
@@ -56,4 +86,4 @@ class Dictaphone extends Component {
 const options = {
 	autoStart: false
 };
-export default SpeechRecognition(options)(Dictaphone);
+export default SpeechRecognition(options)(Speak);
