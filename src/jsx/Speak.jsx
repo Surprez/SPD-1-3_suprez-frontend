@@ -35,21 +35,17 @@ class Dictaphone extends Component {
 		console.log("the state is:", this.state.transcript);
 
 		return (
-			<div>
+			<div className='placeholderButtonArray'>
 				<button onClick={startListening}>Start listening</button>
 				<button
 					onClick={() => {
 						// other code runs here
 						this.setState({ transcript: finalTranscript });
-
 						stopListening();
-
 						console.log("final transcript is:", finalTranscript);
 						console.log("the state is:", this.state.transcript);
 					}}
-				>
-					Stop Listening
-				</button>
+				>Stop Listening</button>
 
 				<button onClick={resetTranscript}>Reset</button>
 			</div>

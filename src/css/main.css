@@ -178,3 +178,18 @@ p {
 #content {
 	margin: 20px;
 }
+
+
+.placeholderButtonArray {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.placeholderButtonArray * {
+	margin: 6px;
+	width: 240px;
+}
