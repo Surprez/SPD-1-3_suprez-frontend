@@ -25,9 +25,15 @@ class Keywords extends Component {
 		this.setState({ keywords: newKeywords });
 	};
 
-	handleSubmit = evt => {
+	handleSubmit = (evt) => {
 		/* TODO: implement submit button!! */
-		console.log('hello!!')
+		let myArray = [];
+		for (let obj of this.state.keywords) {
+			myArray.push(obj.name);
+		}
+		console.log('result:')
+		console.log(myArray)
+		return myArray
 	};
 
 	handleAddKeyword = () => {
@@ -57,8 +63,7 @@ class Keywords extends Component {
 							<input
 								type="text"
 								placeholder={`Keyword #${idx + 1}`}
-								value={keyword.name}
-								onChange={this.handleKeywordChange(idx)}
+								onInput={this.handleKeywordChange(idx)}
 							/>
 						</div>
 					))}
@@ -71,9 +76,9 @@ class Keywords extends Component {
 					>
 						Add Keyword
 				</button>
-					<button type='submit' onInput='handleSubmit()'>Submit</button>
+					<button type='button' onClick={this.handleSubmit}>Submit</button>
 				</div>
-			</form>
+			</form >
 		);
 	}
 }
