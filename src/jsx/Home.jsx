@@ -6,13 +6,13 @@ import Speech from "./Speak";
 
 // Default Export
 const Home = props => {
-  return (
-    <div>
-      <Hero />
-      <Speech />
-      <About />
-    </div>
-  );
+	return (
+		<div>
+			<Hero />
+			<Speech />
+			<About />
+		</div>
+	);
 };
 
 export default Home;
