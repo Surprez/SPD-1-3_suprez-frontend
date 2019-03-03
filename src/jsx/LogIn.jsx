@@ -19,9 +19,9 @@ class Login extends Component {
 						<input type='password' id='password' name='password' required></input>
 					</div>
 
-					<div>
+					<div className='submit-stuff'>
 						<button type='submit'>Log In</button>
-						<Link to='/'>return home</Link>
+						<Link to='/' className='button'>Home</Link>
 					</div>
 				</form>
 			</div>

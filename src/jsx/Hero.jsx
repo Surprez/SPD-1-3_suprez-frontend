@@ -17,7 +17,7 @@ const Hero = (props) => {
 		<div className='hero'>
 			<div>
 				<div>
-					<img src={logo} className='logo' alt='logo' />
+					{/* <img src={logo} className='logo' alt='logo' /> */}
 
 					<header>
 						<h1 className='brand'>Suprez</h1>
