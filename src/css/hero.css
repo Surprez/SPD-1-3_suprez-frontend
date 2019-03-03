@@ -1,25 +1,73 @@
+:root {
+	--base-white: #EDEBEB;
+
+	--blu-bright: #585A96;
+	--blu-light: #343677;
+	--blu-main: #1B1B5A;
+	--blu-shade: #1B1B5A;
+	--blu-darker: #09093B;
+
+	--prp-bright: #774E90;
+	--prp-light: #582B72;
+	--prp-main: #3E1356;
+	--prp-shade: #28043B;
+	--prp-darker: #170123;
+
+	--grn-bright: #438181;
+	--grn-light: #236666;
+	--grn-main: #0E4D4D;
+	--grn-shade: #013634;
+	--grn-darker: #00201E;
+
+	--yel-bright: #D7BD6F;
+	--yel-light: #AA8E3A;
+	--yel-main: #816617;
+	--yel-shade: #594302;
+	--yel-darker: #342700;
+
+	--base-black: #222226;
+}
+
 .hero {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	text-align: center;
 	background-size: cover;
 	background-color: grey;
 	background-attachment: fixed;
-	height: calc(100vh - 50px);
-}
-
-.hero-image {
-	background-image: url('../img/fireworks01.jpg');
-	filter: blur(2px);
+	height: 100vh;
+	background-image: url('../img/fireworks01-dark.jpg');
 }
 
 .hero * {
 	margin: 20px;
+	padding: 0px;
 }
 
-.call-to-action button {
-	display: block;
-	width: fit-content;
+.logo {
+	position: absolute;
+	opacity: 0.35;
+	left: calc(50% - 220px);
+	top: 65px;
+	z-index: inherit 0;
+}
+
+.more {
+	color: var(--grn-bright);
+	font-size: 12em;
+	text-shadow: 5px 5px 5px white;
+	position: absolute;
+	bottom: 0;
+	left: calc(50vw - 0.5em - 38px);
+
+}
+
+
+h1 {
+	padding: 0 -20px 0 0;
+}
+
+.subheading {
+	font-size: 4em;
 }

@@ -82,17 +82,19 @@
 }
 
 /* === Setting up defualt fonts === */
-html, body * {
+html, body, body * {
 	font-family: 'Lato';
 	font-weight: 300;
 }
 
-h1 {
+h1, h1 * {
 	font-family: 'Oneday';
 	font-weight: 400;
 }
 
-h2, h3, h4 {
+h2, h2 *,
+h3, h3 *,
+h4, h4 * {
 	font-family: 'Raleway';
 	font-weight: 100;
 }

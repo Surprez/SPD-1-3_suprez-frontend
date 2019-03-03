@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar from './Navbar.jsx';
 import SignUp from './SignUp.jsx';
 import Login from './LogIn.jsx';
+import Speak from './Speak.jsx'
 import Home from './Home.jsx';
 
 // CSS files
@@ -13,11 +14,12 @@ import '../css/fonts.css';
 const App = () => {
 	return (
 		<Router>
-			<div id='root'>
+			<div>
 				<Navbar />
 				<Route exact path='/' component={Home} />
 				<Route exact path='/login' component={Login} />
 				<Route exact path='/signup' component={SignUp} />
+				<Route exact path='/speak' component={Speak} />
 			</div>
 		</Router>
 	);
