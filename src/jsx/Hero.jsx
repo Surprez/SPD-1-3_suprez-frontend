@@ -15,14 +15,20 @@ library.add(faChevronCircleDown);
 const Hero = (props) => {
 	return (
 		<div className='hero'>
-			<div >
+			<div>
 				<img src={logo} className='logo' alt='logo' />
-				<h1>Suprez!</h1>
-				<h4>Not just presentations. Experiences.</h4>
+
+				<header>
+					<h1 className='brand'>Suprez</h1>
+					<h2 className='subheading'>Not just presentations.<br /><em>Experiences.</em></h2>
+				</header>
+
 			</div>
 
 			<div>
-				<Link className='call-to-action button' to='/speak'>Start Your Experience</Link>
+				<h4>
+					<Link className='call-to-action button' to='/speak'>Begin Your Presentation</Link>
+				</h4>
 			</div>
 
 			<div>
@@ -30,7 +36,7 @@ const Hero = (props) => {
 					<FontAwesomeIcon icon='chevron-circle-down' />
 				</a>
 			</div>
-		</div>
+		</div >
 	)
 }
 

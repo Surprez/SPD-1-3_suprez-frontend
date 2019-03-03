@@ -13,7 +13,7 @@ import '../css/fonts.css';
 const App = () => {
 	return (
 		<Router>
-			<div id='root'>
+			<div>
 				<Navbar />
 				<Route exact path='/' component={Home} />
 				<Route exact path='/login' component={Login} />
