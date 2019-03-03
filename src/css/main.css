@@ -73,19 +73,20 @@ h6 {
 p, button, a, label, textarea, input {
 	font-size: 2em;
 }
+
 .navbar {
+	position: fixed;
+	top: 0;
 	--outer-ring: 24px;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	position: fixed;
-	width: calc(100vw - var(--outer-ring)*2);
 	background-color: transparent;
+	width: calc(100vw - var(--outer-ring)*2);
+	margin: var(--outer-ring);
 	padding:
 		6px 0
 		6px 0;
-	/* padding: var(--outer-ring); */
-	margin: var(--outer-ring);
 }
 
 .navbar > .spacing {

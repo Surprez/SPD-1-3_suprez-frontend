@@ -1,7 +1,7 @@
 // React imports
 import React from 'react'
 import { Link } from 'react-router-dom';
-import logo from '../svg/logo.svg';
+// import logo from '../svg/logo.svg';
 
 // CSS files
 import '../css/hero.css';
