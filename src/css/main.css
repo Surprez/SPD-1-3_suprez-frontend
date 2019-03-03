@@ -94,7 +94,7 @@ p, button, a, label, textarea, input {
 
 .navbar .button,
 .navbar	button {
-	margin-left: 6px;
+	margin-left: 12px;
 }
 
  button,
@@ -214,4 +214,26 @@ p, button, a, label, textarea, input {
 	border-color: var(--grn-bright);
 	border-radius: 50%;
 	width: 85%;
+}
+
+button, input {
+	display:inline;
+}
+
+#keywords * {
+	padding-top: 6px;
+	padding-bottom: 6px
+}
+
+#keywords input {
+	margin-left: 12px;
+}
+
+.submit-stuff {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.submit-stuff * {
+	margin-right: 12px
 }

@@ -26,7 +26,8 @@ class Keywords extends Component {
 	};
 
 	handleSubmit = evt => {
-		//	 TODO
+		/* TODO: implement submit button!! */
+		console.log('hello!!')
 	};
 
 	handleAddKeyword = () => {
@@ -44,40 +45,34 @@ class Keywords extends Component {
 	render() {
 		return (
 			<form onSubmit={this.handleSubmit}>
-				<input
-					type="text"
-					placeholder="Presentation Name"
-					value={this.state.name}
-					onChange={this.handleNameChange}
-				/>
-
 				<h2>Keywords</h2>
-
-				{this.state.keywords.map((keyword, idx) => (
-					<div className="keyword">
-						<input
-							type="text"
-							placeholder={`Keyword #${idx + 1}`}
-							value={keyword.name}
-							onChange={this.handleKeywordChange(idx)}
-						/>
-						<button
-							type="button"
-							onClick={this.handleRemoveShareholder(idx)}
-							className="small"
-						>
-							-
-						</button>
-					</div>
-				))}
-				<button
-					type="button"
-					onClick={this.handleAddKeyword}
-					className="small"
-				>
-					Add Keyword
+				<div id='keywords'>
+					{this.state.keywords.map((keyword, idx) => (
+						<div className="keyword">
+							<button
+								type="button"
+								onClick={this.handleRemoveShareholder(idx)}
+								className="small"
+							>&minus;</button>
+							<input
+								type="text"
+								placeholder={`Keyword #${idx + 1}`}
+								value={keyword.name}
+								onChange={this.handleKeywordChange(idx)}
+							/>
+						</div>
+					))}
+				</div>
+				<div className='submit-stuff'>
+					<button
+						type="button"
+						onClick={this.handleAddKeyword}
+						className="small"
+					>
+						Add Keyword
 				</button>
-				<button>Submit</button>
+					<button type='submit' onInput='handleSubmit()'>Submit</button>
+				</div>
 			</form>
 		);
 	}
