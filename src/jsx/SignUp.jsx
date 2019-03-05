@@ -19,9 +19,9 @@ class SignUp extends Component {
 						<input type='password' id='password' name='password' required></input>
 					</div>
 
-					<div>
-						<button type='submit'>Sign Up</button>
-						<Link to='/'>return home</Link>
+					<div className='inputbar'>
+						<button className='button' type='submit'>Sign Up</button>
+						<Link to='/' className='button'>Home</Link>
 					</div>
 				</form>
 			</div>

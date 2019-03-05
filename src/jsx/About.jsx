@@ -4,12 +4,10 @@ import Nolan from '../img/Nolan.jpg'
 import Raymond from '../img/Raymond.jpg'
 import KJ from '../img/KJ.jpg'
 
-
-
 const About = (props) => {
 	return (
 		<div id='content'>
-			<h2>Not presentations, experiences</h2>
+			<h2>Experience Suprez</h2>
 			<p>When giving a presentation, you’re usually given a big stage to move around in. Yet many still stick to a confined
 				corner. Why is that? Well, there’s a big tether in the form of a laptop or other device. Someone has to change slides
 		right? Let Suprez help with that. Just worry about delivering a powerful experience.</p>
@@ -24,21 +22,23 @@ const About = (props) => {
 		startup’s “lightbulb moment”? What about that “spark” that drives and motivates you?</p>
 
 			<h3>Meet the Team</h3>
-			<div id='team-photo'>
-				<img alt='Keoni Murray' src={Keoni} />
-				<p className='team-desc'>Keoni Murray</p>
-			</div>
-			<div id='team-photo'>
-				<img alt='Nolan Kovacik' src={Nolan} />
-				<p className='team-desc'>Nolan Kovacik</p>
-			</div>
-			<div id='team-photo'>
-				<img alt='Raymond Wu' src={Raymond} />
-				<p className='team-desc'>Raymond Wu</p>
-			</div>
-			<div id='team-photo'>
-				<img alt='KJ Wilson' src={KJ} />
-				<p className='team-desc'>KJ Wilson</p>
+			<div id='the-team'>
+				<div>
+					<img className='team-photo' alt='Keoni Murray' src={Keoni} />
+					<p className='team-desc'>Keoni Murray</p>
+				</div>
+				<div>
+					<img className='team-photo' alt='Nolan Kovacik' src={Nolan} />
+					<p className='team-desc'>Nolan Kovacik</p>
+				</div>
+				<div>
+					<img className='team-photo' alt='Raymond Wu' src={Raymond} />
+					<p className='team-desc'>Raymond Wu</p>
+				</div>
+				<div>
+					<img className='team-photo' alt='KJ Wilson' src={KJ} />
+					<p className='team-desc'>KJ Wilson</p>
+				</div>
 			</div>
 		</div>
 	);
