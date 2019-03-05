@@ -1,5 +1,6 @@
 // Login.jsx
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Login extends Component {
 	constructor(props) {
@@ -9,7 +10,7 @@ export default class Login extends Component {
 			password: ""
 		};
 	}
-	handleInputChange = event => {
+	handleChange = event => {
 		const { value, name } = event.target;
 		this.setState({
 			[name]: value
@@ -40,30 +41,46 @@ export default class Login extends Component {
 	render() {
 		return (
 			<div>
+				<h2>Log In</h2>
+
 				<form onSubmit={this.onSubmit}>
-					<input
-						type="text"
-						name="username"
-						placeholder="Enter username"
-						value={this.state.username}
-						onChange={this.handleInputChange}
-						required
-					/>
-					<input
-						type="password"
-						name="password"
-						placeholder="Enter password"
-						value={this.state.password}
-						onChange={this.handleInputChange}
-						required
-					/>
-					<input type="submit" value="Submit" />
+					<div>
+						<label>Username</label>
+						<br />
+						<input
+							type="text"
+							id="username"
+							name="username"
+							value={this.state.username}
+							onChange={this.handleChange}
+							required
+						/>
+					</div>
+
+					<div>
+						<label>Password</label>
+						<br />
+						<input
+							type="password"
+							id="password"
+							name="password"
+							value={this.state.password}
+							onChange={this.handleChange}
+							required
+						/>
+					</div>
+
+					<div className='inputbar'>
+						<button className='button' type='submit'>Sign Up</button>
+						<Link to='/' className='button'>Home</Link>
+					</div>
 				</form>
+
+
+
+
+
 			</div>
 		);
 	}
-}
-
-{
-	/* <Link to='/'>return home</Link> */
 }
