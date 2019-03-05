@@ -29,7 +29,6 @@ class SignUp extends Component {
 		console.log("handle submit", this.state.username, this.state.password);
 	};
 
-
 	render() {
 		return (
 			<div>
