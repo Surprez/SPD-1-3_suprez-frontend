@@ -1,6 +1,7 @@
 // import logo from '../svg/logo.svg';
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Keywords from './Keywords.jsx'
 import Navbar from './Navbar.jsx';
 import SignUp from './SignUp.jsx';
 import Login from './LogIn.jsx';
@@ -19,6 +20,7 @@ const App = () => {
 				<Route exact path='/' component={Home} />
 				<Route exact path='/login' component={Login} />
 				<Route exact path='/signup' component={SignUp} />
+				<Route exact path='/keywords' component={Keywords} />
 				<Route exact path='/speak' component={Speak} />
 			</div>
 		</Router>
