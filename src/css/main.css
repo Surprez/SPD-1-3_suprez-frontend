@@ -219,7 +219,7 @@ p, button, a, label, textarea, input {
 	align-items: center;
 	align-self: center;
 	width: 100%;
-	color: var(--grn-bright)
+	color: var(--yel-bright)
 }
 
 #the-team > * {
@@ -228,7 +228,7 @@ p, button, a, label, textarea, input {
 
 .team-photo {
 	border-style: solid;
-	border-color: var(--grn-bright);
+	border-color: var(--yel-bright);
 	border-radius: 50%;
 	width: 85%;
 }
