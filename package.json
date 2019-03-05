@@ -6,6 +6,7 @@
 		"@fortawesome/fontawesome-svg-core": "^1.2.15",
 		"@fortawesome/free-solid-svg-icons": "^5.7.2",
 		"@fortawesome/react-fontawesome": "^0.1.4",
+		"axios": "^0.18.0",
 		"i": "^0.3.6",
 		"npm": "^6.8.0",
 		"react": "^16.8.3",
@@ -14,8 +15,6 @@
 		"react-scripts": "2.1.5",
 		"react-speech-recognition": "^1.0.7"
 	},
-
-
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",

@@ -1,7 +1,7 @@
 // React imports
 import React from 'react'
 import { Link } from 'react-router-dom';
-import logo from '../svg/logo.svg';
+// import logo from '../svg/logo.svg';
 
 // CSS files
 import '../css/hero.css';
@@ -17,7 +17,7 @@ const Hero = (props) => {
 		<div className='hero'>
 			<div>
 				<div>
-					<img src={logo} className='logo' alt='logo' />
+					{/* <img src={logo} className='logo' alt='logo' /> */}
 
 					<header>
 						<h1 className='brand'>Suprez</h1>
