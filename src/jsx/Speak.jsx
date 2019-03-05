@@ -46,31 +46,26 @@ class Speak extends Component {
 		if (myWord === MAGICWORD) {
 			// this checks for the magic word
 			console.log(prvWord)
-			console.log('\n')
-			// goAPI = prvWord
+			goAPI = prvWord
 		} else {
-			if (PLACEHOLDER.indexOf(myWord) !== -1) {
-				// alert(`now searching ${myWord} in api...`);
-				Axios.get(`http://api.giphy.com/v1/gifs/search?q=:${myWord}&api_key=${process.env.REACT_APP_GIPHY_API_KEY}&limit=1`).then(res => {
-					console.log(res.data.data[0].embed_url);
-				})
+			for (let keyWord of PLACEHOLDER) {
+				if (myWord === keyWord) {
+					// this checks for keywords
+					console.log(keyWord)
+					goAPI = keyWord
+					break
+				}
 			}
-			// for (let keyWord of PLACEHOLDER) {
-			// 	if (myWord === keyWord) {
-			// 		// this checks for keywords
-			// 		console.log(keyWord)
-			// 		console.log('\n')
-			// 		alert(`now searching ${goAPI} in api...`)
-			// 		// goAPI = keyWord
-			// 		break
-			// 	}
-			// }
 		}
 
-		// if (goAPI) {
-		// 	alert(`now searching ${goAPI} in api...`)
-		// 	goAPI=false;
-		// }
+		if (goAPI) {
+			Axios
+				.get(`http://api.giphy.com/v1/gifs/search?q=:${goAPI}&api_key=${process.env.REACT_APP_GIPHY_API_KEY}&limit=1`)
+				.then(res => {
+					console.log(res.data.data[0].embed_url);
+				})
+		}
+
 		console.log(myWord)
 
 		return (
