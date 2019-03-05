@@ -14,11 +14,14 @@
 		"react-scripts": "2.1.5",
 		"react-speech-recognition": "^1.0.7"
 	},
+
+
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"proxy": "http://localhost:8080"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
