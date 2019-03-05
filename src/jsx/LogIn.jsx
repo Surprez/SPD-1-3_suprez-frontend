@@ -40,6 +40,7 @@ export default class Login extends Component {
 	render() {
 		return (
 			<div>
+<<<<<<< HEAD
 				<form onSubmit={this.onSubmit}>
 					<input
 						type="text"
@@ -58,6 +59,25 @@ export default class Login extends Component {
 						required
 					/>
 					<input type="submit" value="Submit" />
+=======
+				<h2>Log In</h2>
+
+				<form action='/login' method='POST'>
+					<div>
+						<label>Username</label><br />
+						<input type='text' id='username' name='username' required></input>
+					</div>
+
+					<div>
+						<label>Password</label><br />
+						<input type='password' id='password' name='password' required></input>
+					</div>
+
+					<div className='inputbar'>
+						<button type='submit'>Log In</button>
+						<Link to='/' className='button'>Home</Link>
+					</div>
+>>>>>>> 71e85bf8da7db556be77f6cdc3d5f38032a581b0
 				</form>
 			</div>
 		);

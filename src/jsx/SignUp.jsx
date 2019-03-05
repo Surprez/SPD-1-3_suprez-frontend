@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 //need this to send form data
 
 class SignUp extends Component {
@@ -62,8 +61,9 @@ class SignUp extends Component {
 						/>
 					</div>
 
-					<div>
-						<button type="submit">Sign Up</button>
+					<div className='inputbar'>
+						<button className='button' type='submit'>Sign Up</button>
+						<Link to='/' className='button'>Home</Link>
 					</div>
 				</form>
 			</div>
