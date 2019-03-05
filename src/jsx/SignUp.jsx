@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+//need this to send form data
 
 class SignUp extends Component {
 	constructor(props) {
@@ -36,25 +37,27 @@ class SignUp extends Component {
 
 				<form onSubmit={this.handleSubmit}>
 					<div>
-						<label>Username</label><br />
+						<label>Username</label>
+						<br />
 						<input
-							type='text'
-							id='username'
-							name='username'
-							required
+							type="text"
+							id="username"
+							name="username"
 							value={this.state.username}
-							onInput={this.handleChange}
+							onChange={this.handleChange}
+							required
 						/>
 					</div>
 
 					<div>
-						<label>Password</label><br />
+						<label>Password</label>
+						<br />
 						<input
 							type="password"
 							id="password"
 							name="password"
 							value={this.state.password}
-							onInput={this.handleChange}
+							onChange={this.handleChange}
 							required
 						/>
 					</div>
