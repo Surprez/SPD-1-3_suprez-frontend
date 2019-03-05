@@ -47,12 +47,12 @@ h1 {
 
 h2 {
 	color: var(--yel-bright);
-	font-size: 9em;
+	font-size: 6em;
 }
 
 h3 {
 	color: var(--yel-bright);
-	font-size: 6em;
+	font-size: 5em;
 }
 
 h4 {
@@ -71,7 +71,21 @@ h6 {
 }
 
 p, button, a, label, textarea, input {
-	font-size: 2em;
+	font-size: 1.5em;
+}
+
+
+.inputbar {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: left;
+	width: fit-content;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.inputbar * {
+	margin-right: 12px;
 }
 
 .navbar {
@@ -88,6 +102,7 @@ p, button, a, label, textarea, input {
 		6px 0
 		6px 0;
 }
+
 
 .navbar > .spacing {
 	flex-grow: 1;
@@ -217,12 +232,6 @@ p, button, a, label, textarea, input {
 	border-radius: 50%;
 	width: 85%;
 }
-
-
-.button, button, input {
-	display: inline;
-}
-
 nav.button,
 nav button,
 .call-to-action.button,
@@ -233,17 +242,4 @@ nav button,
 #keywords * {
 	padding-top: 6px;
 	padding-bottom: 6px
-}
-
-#keywords input {
-	margin-left: 12px;
-}
-
-.submit-stuff {
-	padding-top: 6px;
-	padding-bottom: 6px;
-}
-
-.submit-stuff * {
-	margin-right: 12px
 }

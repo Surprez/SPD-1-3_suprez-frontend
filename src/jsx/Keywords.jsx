@@ -54,7 +54,7 @@ class Keywords extends Component {
 				<h2>Keywords</h2>
 				<div id='keywords'>
 					{this.state.keywords.map((keyword, idx) => (
-						<div className="keyword">
+						<div className="inputbar">
 							<button
 								type="button"
 								onClick={this.handleRemoveShareholder(idx)}
@@ -68,14 +68,14 @@ class Keywords extends Component {
 						</div>
 					))}
 				</div>
-				<div className='submit-stuff'>
+				<div className='inputbar'>
 					<button
 						type="button"
 						onClick={this.handleAddKeyword}
 						className="small"
 					>
 						Add Keyword
-				</button>
+					</button>
 					<button type='button' onClick={this.handleSubmit}>Submit</button>
 				</div>
 			</form >
