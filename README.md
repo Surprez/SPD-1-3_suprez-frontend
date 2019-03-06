@@ -45,6 +45,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 <p align="center">
     <img src="https://i.imgur.com/tLDhiES.jpg" width = 10% style="border-radius:50%" />
 </p>
+
 ### Raymond Wu
   - Role(s): Full Stack Developer, UI/UX Design
   - Technologies: HTML, CSS, React, NodeJS, MongoDB, Postman, Photoshop, Illustrator
@@ -52,6 +53,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 <p align="center">
     <img src="https://i.imgur.com/amM5Snh.jpg" width = 10% style="border-radius:50%" />
 </p>
+
 ### Nolan Kovacik
   - Role(s): Front End Developer, Gitmaster
   - Technologies: HTML, CSS, React
@@ -59,6 +61,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 <p align="center">
     <img src="https://i.imgur.com/M0GZNxu.jpg" width = 10% style="border-radius:50%" />
 </p>
+
 ### Keoni Murray
   - Role(s): Back End Developer, API Integration
   - Technologies: NodeJS, MongoDB, React, Postman, Web Speech API
@@ -66,6 +69,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 <p align="center">
     <img src="https://i.imgur.com/lexUEaK.jpg" width = 10% style="border-radius:50%" />
 </p>
+
 ### KJ Wilson
   - Role(s): Back End Developer, Ideator
   - Technologies: NodeJS, Express, MongoDB
