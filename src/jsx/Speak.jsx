@@ -8,7 +8,8 @@ class Speak extends Component {
 		super(props);
 
 		this.state = {
-			transcript: null
+			transcript: null,
+			word: null,
 		};
 	}
 
@@ -41,19 +42,22 @@ class Speak extends Component {
 
 		// warning! PLACEHOLDER must be replaced with user's list.
 		const PLACEHOLDER = ['banana', 'bananas']
-		const MAGICWORD = 'hello'
+		const MAGICWORD = 'world'
 
-		if (myWord === MAGICWORD) {
-			// this checks for the magic word
-			console.log(prvWord)
-			goAPI = prvWord
-		} else {
-			for (let keyWord of PLACEHOLDER) {
-				if (myWord === keyWord) {
-					// this checks for keywords
-					console.log(keyWord)
-					goAPI = keyWord
-					break
+		if (myWord !== this.state.word || myWord !== MAGICWORD || myWord !== prvWord) {
+			console.log(myWord)
+			if (myWord === MAGICWORD) {
+				// this checks for the magic word
+				console.log(prvWord)
+				goAPI = prvWord
+			} else {
+				for (let keyWord of PLACEHOLDER) {
+					if (myWord === keyWord) {
+						// this checks for keywords
+						console.log(keyWord)
+						goAPI = keyWord
+						break
+					}
 				}
 			}
 		}
@@ -62,14 +66,18 @@ class Speak extends Component {
 			Axios
 				.get(`http://api.giphy.com/v1/gifs/search?q=:${goAPI}&api_key=${process.env.REACT_APP_GIPHY_API_KEY}&limit=1`)
 				.then(res => {
-					console.log(res.data.data[0].embed_url);
+					console.log(res)
+					console.log(res.data.data[0].images.original.url)
+					this.setState({ link: res.data.data[0].images.original.url, word: goAPI })
+					// console.log(res.data.data[0].embed_url);
 				})
 		}
 
-		console.log(myWord)
-
 		return (
 			<div className='placeholderButtonArray' >
+				<div className='gifbox'>
+					<img alt='speak_response' src={this.state.link} id='gif' />
+				</div>
 				<button onClick={startListening}>Start listening</button>
 				<button
 					onClick={() => {
@@ -80,7 +88,6 @@ class Speak extends Component {
 						console.log("the state is:", this.state.transcript);
 					}}
 				>Stop Listening</button>
-
 				<button onClick={resetTranscript}>Reset</button>
 			</div>
 		);
