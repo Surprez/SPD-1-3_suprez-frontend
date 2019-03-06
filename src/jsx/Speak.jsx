@@ -63,6 +63,7 @@ class Speak extends Component {
 				.get(`http://api.giphy.com/v1/gifs/search?q=:${goAPI}&api_key=${process.env.REACT_APP_GIPHY_API_KEY}&limit=1`)
 				.then(res => {
 					console.log(res.data.data[0].embed_url);
+					return <img id="speak_response" alt="giphy" src="{res}"></img>	
 				})
 		}
 
