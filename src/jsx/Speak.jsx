@@ -41,10 +41,10 @@ class Speak extends Component {
 		let goAPI = false
 
 		// warning! PLACEHOLDER must be replaced with user's list.
-		const PLACEHOLDER = ['banana', 'bananas']
-		const MAGICWORD = 'world'
+		const PLACEHOLDER = ['banana', 'bananas', 'amazing', 'fireworks', 'surprise']
+		const MAGICWORD = 'placeholder'
 
-		if (myWord !== this.state.word || myWord !== MAGICWORD || myWord !== prvWord) {
+		if (myWord !== this.state.word && myWord !== MAGICWORD && myWord !== prvWord) {
 			console.log(myWord)
 			if (myWord === MAGICWORD) {
 				// this checks for the magic word
