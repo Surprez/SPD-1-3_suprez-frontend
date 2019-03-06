@@ -75,8 +75,9 @@ class Speak extends Component {
 
 		return (
 			<div className='placeholderButtonArray' >
-				<img alt='speak_response' src={this.state.link} className='avatar-item body' />
-
+				<div className='gifbox'>
+					<img alt='speak_response' src={this.state.link} id='gif' />
+				</div>
 				<button onClick={startListening}>Start listening</button>
 				<button
 					onClick={() => {

@@ -243,3 +243,21 @@ nav button,
 	padding-top: 6px;
 	padding-bottom: 6px
 }
+
+#gif {
+	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.gifbox {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-content: center;
+	align-items: center;
+	align-self: center;
+	justify-content: center;
+	justify-items: center;
+	justify-self: center;
+}
