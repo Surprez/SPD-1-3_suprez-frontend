@@ -20,7 +20,7 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"proxy": "http://localhost:8080/"
+		"proxy": "https://suprez.herokuapp.com/"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
