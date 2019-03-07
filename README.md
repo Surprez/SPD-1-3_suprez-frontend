@@ -26,6 +26,7 @@ Once you navigate to development mode or our live website, you have a few option
 1. navigate to *Start Presentation*, always accessible in navbar `/speak`
 1. speak the *magic word* to search previous word in giphy API
 1. speak a *key word* to search in giphy API
+1. log out once they are finished
 1. return to account later on and use log in feature to reload keywords
 
 ## React Options
