@@ -14,6 +14,20 @@ When it comes to great performances what characteristics come to mind? Charisma?
 
 That's where Suprez comes in. By using your voice Suprez can trigger on certain words that you would already talk about. Visuals and slides are generated dynamically. For example, you can talk about the "lightbulb" moment that you had when talking about your startup and have a lightbulb pop up on screen or the "spark" that drives you.
 
+## User Manual
+Once you navigate to development mode or our live website, you have a few options available. A typical person would go through the following steps, in order:
+1. visit website `/`
+1. click call to action button, *Start Presentation* `/speak`
+1. view tutorial popup
+1. speak the *magic word* to search previous word in giphy API
+1. create an account, redirect to home page `/signup`
+1. click the new *create keywords* option in navbar `/keywords`
+1. save new *key words*, redirect to home page `/`
+1. navigate to *Start Presentation*, always accessible in navbar `/speak`
+1. speak the *magic word* to search previous word in giphy API
+1. speak a *key word* to search in giphy API
+1. return to account later on and use log in feature to reload keywords
+
 ## React Options
 This project is bootstrapped with react. This come with several commands that you can run in the project directory:
 
