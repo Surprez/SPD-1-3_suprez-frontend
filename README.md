@@ -79,8 +79,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 </p>
 
 ### Nolan Kovacik
-  - Role(s): Front End Developer, Gitmaster
-  - Technologies: HTML, CSS, React
+  - Role(s): Front End Developer, Full Stack Developer, Gitmaster
+  - Technologies: HTML, CSS, React, MongoDB, NodeJS, Express
 
 <p align="center">
     <img src="https://i.imgur.com/M0GZNxu.jpg" width = 10% style="border-radius:50%" />
