@@ -6,7 +6,7 @@
 > ### Check out our [Backend Repo!](https://github.com/noltron000/SPD-1-3_suprez-backend)
 Not presentations, experiences.
 
-[![HitCount](http://hits.dwyl.io/Suprez/https://github.com/noltron000/SPD-1-3_suprez-backend.svg)](http://hits.dwyl.io/Suprez/https://github.com/noltron000/SPD-1-3_suprez-backend)
+[![HitCount](http://hits.dwyl.io/Suprez/https://github.com/noltron000/SPD-1-3_suprez-frontend.svg)](http://hits.dwyl.io/Suprez/https://github.com/noltron000/SPD-1-3_suprez-frontend)
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://shields.io/#your-badge)
 
 ## What is Suprez?
