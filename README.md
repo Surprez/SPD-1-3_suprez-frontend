@@ -10,12 +10,16 @@ Not presentations, experiences.
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://shields.io/#your-badge)
 
 ## What is Suprez?
-When it comes to great performances what characteristics come to mind? Charisma? What about stage presence? Suprez is here to help with that. Yet many presenters are restricted in their movements. They are tethered to the small confined area that their laptops reside in. Someone has to change slides and understand the flow of your presentation. Often times that someone is you. 
+When it comes to great performances what characteristics come to mind? Charisma? What about stage presence? Suprez is here to help with that. Many presenters are restricted in their movements. They are tethered to the small confined area that their laptops reside in. Someone has to change slides and understand the flow of your presentation. Often times that someone is you. 
 
 That's where Suprez comes in. By using your voice Suprez can trigger on certain words that you would already talk about. Visuals and slides are generated dynamically. For example, you can talk about the "lightbulb" moment that you had when talking about your startup and have a lightbulb pop up on screen or the "spark" that drives you.
 
-## Installation
-In the project directory, you can run:
+## React Options
+This project is bootstrapped with react. This come with several commands that you can run in the project directory:
+
+### `npm install`
+Installs needed components for client-side development mode.
+
 ### `npm start`
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
