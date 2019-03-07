@@ -38,6 +38,7 @@ export default class Login extends Component {
 				alert("error logging in!");
 			});
 	};
+
 	render() {
 		return (
 			<div>
@@ -75,12 +76,7 @@ export default class Login extends Component {
 						<Link to='/' className='button'>Home</Link>
 					</div>
 				</form>
-
-
-
-
-
-			</div>
+			</div >
 		);
 	}
 }

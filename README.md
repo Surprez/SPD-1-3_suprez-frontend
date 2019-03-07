@@ -4,10 +4,13 @@
 
 # Suprez
 > ### Check out our [Backend Repo!](https://github.com/noltron000/SPD-1-3_suprez-backend)
+
+> ### View our [Live Demo](https://suprez.netlify.com)
 Not presentations, experiences.
 
 [![HitCount](http://hits.dwyl.io/Suprez/https://github.com/noltron000/SPD-1-3_suprez-frontend.svg)](http://hits.dwyl.io/Suprez/https://github.com/noltron000/SPD-1-3_suprez-frontend)
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://shields.io/#your-badge)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2c3e9440-e917-4504-9d7a-a2e3f3f0ccd4/deploy-status)](https://app.netlify.com/sites/suprez/deploys)
 
 ## What is Suprez?
 When it comes to great performances what characteristics come to mind? Charisma? What about stage presence? Suprez is here to help with that. Many presenters are restricted in their movements. They are tethered to the small confined area that their laptops reside in. Someone has to change slides and understand the flow of your presentation. Often times that someone is you. 
@@ -78,8 +81,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 </p>
 
 ### Nolan Kovacik
-  - Role(s): Front End Developer, Gitmaster
-  - Technologies: HTML, CSS, React
+  - Role(s): Front End Developer, Full Stack Developer, Gitmaster
+  - Technologies: HTML, CSS, React, MongoDB, NodeJS, Express
 
 <p align="center">
     <img src="https://i.imgur.com/M0GZNxu.jpg" width = 10% style="border-radius:50%" />
