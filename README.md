@@ -4,7 +4,6 @@
 
 # Suprez
 > ### Check out our [Backend Repo!](https://github.com/noltron000/SPD-1-3_suprez-backend)
-Not presentations, experiences.
 > ### View our [Live Demo](https://suprez.netlify.com)
 Not presentations, experiences.
 
