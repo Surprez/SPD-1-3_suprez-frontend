@@ -15,6 +15,10 @@
 		"react-scripts": "2.1.5",
 		"react-speech-recognition": "^1.0.7"
 	},
+	"engines": {
+		"npm": "6.8.0",
+		"node": "11.3.0"
+	},
 	"proxy": "https://suprez.herokuapp.com",
 	"scripts": {
 		"start": "react-scripts start",
