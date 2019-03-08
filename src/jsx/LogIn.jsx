@@ -9,7 +9,7 @@ class Login extends Component {
 			password: ""
 		};
 	}
-	handleInput = event => {
+	handleChange = event => {
 		const { value, name } = event.target;
 		this.setState({
 			[name]: value
@@ -53,7 +53,7 @@ class Login extends Component {
 							id="username"
 							name="username"
 							value={this.state.username}
-							onInput={this.handleInput}
+							onChange={this.handleChange}
 							required
 						/>
 					</div>
@@ -66,7 +66,7 @@ class Login extends Component {
 							id="password"
 							name="password"
 							value={this.state.password}
-							onInput={this.handleInput}
+							onChange={this.handleChange}
 							required
 						/>
 					</div>
