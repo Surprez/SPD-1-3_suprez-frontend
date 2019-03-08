@@ -2,6 +2,10 @@
     <img src="https://i.imgur.com/LBj9G8k.png" width = "250" />
 </p>
 
+TODO: API Routes
+TODO: Screenshots
+TODO: github profiles
+
 # Suprez
 > ### Check out our [Backend Repo!](https://github.com/noltron000/SPD-1-3_suprez-backend)
 
@@ -72,7 +76,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
     <img src="https://i.imgur.com/tLDhiES.jpg" width = 10% style="border-radius:50%" />
 </p>
 
-### Raymond Wu
+### Raymond Wu - [Github](https://github.com/RaymondDashWu)
   - Role(s): Full Stack Developer, UI/UX Design
   - Technologies: HTML, CSS, React, NodeJS, MongoDB, Postman, Photoshop, Illustrator
 
@@ -80,7 +84,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
     <img src="https://i.imgur.com/amM5Snh.jpg" width = 10% style="border-radius:50%" />
 </p>
 
-### Nolan Kovacik
+### Nolan Kovacik - [Github](https://github.com/noltron000)
   - Role(s): Front End Developer, Full Stack Developer, Gitmaster
   - Technologies: HTML, CSS, React, MongoDB, NodeJS, Express
 
@@ -88,7 +92,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
     <img src="https://i.imgur.com/M0GZNxu.jpg" width = 10% style="border-radius:50%" />
 </p>
 
-### Keoni Murray
+### Keoni Murray - [Github](https://github.com/Keyology)
   - Role(s): Back End Developer, API Integration
   - Technologies: NodeJS, MongoDB, React, Postman, Web Speech API
 
@@ -96,7 +100,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
     <img src="https://i.imgur.com/lexUEaK.jpg" width = 10% style="border-radius:50%" />
 </p>
 
-### KJ Wilson
+### KJ Wilson - [Github](https://github.com/sadboykj)
   - Role(s): Back End Developer, Ideator
   - Technologies: NodeJS, Express, MongoDB
 
