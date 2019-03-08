@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import SpeechRecognition from "react-speech-recognition";
 import Axios from "axios";
-// import { worker } from "cluster";
 
 class Speak extends Component {
 	constructor(props) {
@@ -40,7 +39,9 @@ class Speak extends Component {
 		let goAPI = false
 
 		// warning! PLACEHOLDER must be replaced with user's list.
-		const PLACEHOLDER = ['banana', 'bananas', 'amazing', 'fireworks', 'surprise', 'questions', 'question', 'spark']
+		// const PLACEHOLDER = ['banana', 'bananas', 'amazing', 'fireworks', 'surprise', 'questions', 'question', 'spark']
+		const PLACEHOLDER = this.props.keywords
+		console.log("CHECK IT!", PLACEHOLDER)
 		const MAGICWORD = 'search'
 
 		if (myWord !== this.state.word && myWord !== prvWord) {

@@ -1,38 +1,42 @@
 import React, { Component } from "react";
+
 // Reference
 // https://goshakkk.name/array-form-inputs/
 
 class Keywords extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 		this.state = {
 			name: "",
-			keywords: [{ name: "" }]
+			keywords: [{ name: "" }],
 		};
 	}
 
-	handleNameChange = evt => {
+	handleNameChange = (evt) => {
 		this.setState({ name: evt.target.value });
 	};
 
-	handleKeywordChange = idx => evt => {
+	handleKeywordChange = (idx) => (evt) => {
 		const newKeywords = this.state.keywords.map((keyword, sidx) => {
 			if (idx !== sidx) return keyword;
 			return { ...keyword, name: evt.target.value };
 		});
-
 		this.setState({ keywords: newKeywords });
 	};
 
-	handleSubmit = evt => {
-		/* TODO: implement submit button!! */
+	handleSubmit = () => {
 		let myArray = [];
 		for (let obj of this.state.keywords) {
 			myArray.push(obj.name);
 		}
-		console.log("result:");
-		console.log(myArray);
-		return myArray;
+
+		console.log('figuring things out...')
+		console.log(this.props)
+		console.log(myArray)
+		////////////////////////////////
+		// THIS HERE IS A MAJOR TODO.
+		// it is not calling the parent function.
+		this.props.saveKeywords(myArray);
 	};
 
 	handleAddKeyword = () => {
@@ -41,7 +45,7 @@ class Keywords extends Component {
 		});
 	};
 
-	handleRemoveShareholder = idx => () => {
+	handleRemoveShareholder = (idx) => () => {
 		this.setState({
 			keywords: this.state.keywords.filter((s, sidx) => idx !== sidx)
 		});
@@ -53,7 +57,7 @@ class Keywords extends Component {
 				<h2>Keywords</h2>
 				<div id="keywords">
 					{this.state.keywords.map((keyword, idx) => (
-						<div className="inputbar">
+						<div key={idx} className="inputbar">
 							<button
 								type="button"
 								onClick={this.handleRemoveShareholder(idx)}
