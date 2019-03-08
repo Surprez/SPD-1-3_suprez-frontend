@@ -1,22 +1,25 @@
-import React, { Component } from "react";
-// import { Link } from "react-router-dom";
-//need this to send form data
 
-export default class SignUp extends Component {
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+
+
+class SignUp extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			username: "",
-			password: ""
+			username: '',
+			password: ''
 		};
 	}
-	handleInputChange = event => {
+
+	handleChange = event => {
 		const { value, name } = event.target;
 		this.setState({
 			[name]: value
 		});
 	};
-	onSubmit = event => {
+
+	handleSubmit = event => {
 		event.preventDefault();
 		return fetch('/signup', {
 			method: "POST",
@@ -39,29 +42,47 @@ export default class SignUp extends Component {
 				alert("error logging in!");
 			});
 	};
+
 	render() {
 		return (
 			<div>
-				<form onSubmit={this.onSubmit}>
-					<input
-						type="text"
-						name="username"
-						placeholder="Enter username"
-						value={this.state.username}
-						onChange={this.handleInputChange}
-						required
-					/>
-					<input
-						type="password"
-						name="password"
-						placeholder="Enter password"
-						value={this.state.password}
-						onChange={this.handleInputChange}
-						required
-					/>
-					<input type="submit" value="Submit" />
+				<h2>Sign Up</h2>
+
+				<form action='/signup' method='POST'>
+					<div>
+						<label>Username</label>
+						<br />
+						<input
+							type="text"
+							id="username"
+							name="username"
+							value={this.state.username}
+							onChange={this.handleChange}
+							required
+						/>
+					</div>
+
+					<div>
+						<label>Password</label>
+						<br />
+						<input
+							type="password"
+							id="password"
+							name="password"
+							value={this.state.password}
+							onChange={this.handleChange}
+							required
+						/>
+					</div>
+
+					<div className='inputbar'>
+						<button className='button' type='submit'>Sign Up</button>
+						<Link to='/' className='button'>Home</Link>
+					</div>
 				</form>
 			</div>
 		);
 	}
 }
+
+export default SignUp

@@ -1,8 +1,7 @@
-// Login.jsx
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
-export default class Login extends Component {
+class Login extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -16,7 +15,8 @@ export default class Login extends Component {
 			[name]: value
 		});
 	};
-	onSubmit = event => {
+
+	handleSubmit = event => {
 		event.preventDefault();
 		return fetch('/login', {
 			method: "POST",
@@ -44,7 +44,7 @@ export default class Login extends Component {
 			<div>
 				<h2>Log In</h2>
 
-				<form onSubmit={this.onSubmit}>
+				<form onSubmit={this.handleSubmit}>
 					<div>
 						<label>Username</label>
 						<br />
@@ -72,11 +72,13 @@ export default class Login extends Component {
 					</div>
 
 					<div className='inputbar'>
-						<button className='button' type='submit'>Sign Up</button>
+						<button className='button' type='submit'>Log In</button>
 						<Link to='/' className='button'>Home</Link>
 					</div>
 				</form>
-			</div >
+			</div>
 		);
 	}
 }
+
+export default Login
