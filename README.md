@@ -3,14 +3,11 @@
 </p>
 
 TODO: API Routes
-TODO: Screenshots
-TODO: github profiles
 
-# Suprez
+# Suprez - Not presentations, experiences.
 > ### Check out our [Backend Repo!](https://github.com/noltron000/SPD-1-3_suprez-backend)
 
 > ### View our [Live Demo](https://suprez.netlify.com)
-Not presentations, experiences.
 
 [![HitCount](http://hits.dwyl.io/Suprez/https://github.com/noltron000/SPD-1-3_suprez-frontend.svg)](http://hits.dwyl.io/Suprez/https://github.com/noltron000/SPD-1-3_suprez-frontend)
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://shields.io/#your-badge)
@@ -21,20 +18,59 @@ When it comes to great performances what characteristics come to mind? Charisma?
 
 That's where Suprez comes in. By using your voice Suprez can trigger on certain words that you would already talk about. Visuals and slides are generated dynamically. For example, you can talk about the "lightbulb" moment that you had when talking about your startup and have a lightbulb pop up on screen or the "spark" that drives you.
 
-## User Manual
-Once you navigate to development mode or our live website, you have a few options available. A typical person would go through the following steps, in order:
-1. visit website `/`
-1. click call to action button, *Start Presentation* `/speak`
-1. view tutorial popup
-1. speak the *magic word* to search previous word in giphy API
-1. create an account, redirect to home page `/signup`
-1. click the new *create keywords* option in navbar `/keywords`
-1. save new *key words*, redirect to home page `/`
-1. navigate to *Start Presentation*, always accessible in navbar `/speak`
-1. speak the *magic word* to search previous word in giphy API
-1. speak a *key word* to search in giphy API
-1. log out once they are finished
-1. return to account later on and use log in feature to reload keywords
+## How it works
+
+In the case of a non logged in user they can activate it by saying "search" followed by the word that they want to be searched.
+
+#### Non logged in user 
+Once you clone the repo and run it locally go to "Begin Your Presentation" and click start listening. From here it will listen to all of the words you say and transcribing them live. Look at your browser's console to see what is being transcribed:
+<img src="https://i.imgur.com/BIopDfj.jpg">
+
+Activate the search by saying the word "Search". This will search the next word that is said. For example, if you wanted a GIF of a banana to appear you'd say "... search banana ...". 
+
+<img src="https://i.imgur.com/VoQudwj.png">
+
+#### Logged in user
+Define keywords that you want to be searched in the "Keywords" bar at the top. From there you'll be able to activate GIF searches 
+
+## Endpoints
+### Presentations
+#### '/speak' - create ONE ride
+The user can start a presentation. Simply click "Start Listening" and "Stop Listening" when you're done. For further instructions click "Instructions"
+
+#### '/keywords' - create ONE or MANY keywords
+Logged in users can create keywords that will activate the GIF search. For example, "banana" will now look for a banana GIF as soon as the word is said.
+<img src="https://i.imgur.com/clqGJTA.jpg">
+
+### Authentication 🔐
+#### '/signup' - get sign-up template
+User can see the sign-up template and enter their sign-up information.
+
+#### '/signup' - create ONE user
+User sign-up information is validated and processed through a POST route. Their email address, username and phone number must all be unique in order for the login to be successful. They must also choose a password.
+
+If successful, a JWT token will be created to keep them logged in for the duration of the session. This route will redirect to the rides index.
+
+#### '/login' - get login template
+User can see the login template and enter their login credentials.
+
+#### '/login' - post ONE user
+User login credentials are validated and processed through a POST route. Their username OR email address OR phone number must exactly match the information that we have on file. Their password must also be valid.
+
+If successful, a JWT token will be created to keep them logged in for the duration of the session. This route will redirect to the rides index.
+
+#### '/logout' - log user out
+The route will destroy the user's JWT token removing authorization to create and delete rides and interact with their communities.
+
+The user will be routed back to the root route.
+
+## APIs
+> [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) used for speech recognition
+
+> [Giphy API](https://developers.giphy.com/) used to return GIFs upon triggering keyword
+
+> A node compatible version of the Web Speech API can be found here:
+https://www.npmjs.com/package/react-speech-recognition
 
 ## React Options
 This project is bootstrapped with react. This come with several commands that you can run in the project directory:
