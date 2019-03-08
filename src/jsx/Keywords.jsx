@@ -12,14 +12,6 @@ class Keywords extends Component {
 		};
 	}
 
-	saveKeywords = (myArray) => {
-		////////////////////////////////
-		// THIS HERE IS A MAJOR TODO.
-		// it is not calling the parent function.
-		console.log("RUNNING:", myArray)
-		this.props.saveKeywords(myArray);
-	}
-
 	handleNameChange = (evt) => {
 		this.setState({ name: evt.target.value });
 	};
@@ -40,7 +32,11 @@ class Keywords extends Component {
 
 		console.log('figuring things out...')
 		console.log(this.props)
-		this.saveKeywords(myArray);
+		console.log(myArray)
+		////////////////////////////////
+		// THIS HERE IS A MAJOR TODO.
+		// it is not calling the parent function.
+		this.props.saveKeywords(myArray);
 	};
 
 	handleAddKeyword = () => {

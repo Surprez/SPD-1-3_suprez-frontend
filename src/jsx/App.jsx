@@ -22,7 +22,6 @@ class App extends Component {
 	}
 
 	saveKeywords = (newKeywords) => {
-		console.log("HOORAY")
 		this.setState({ keywords: newKeywords })
 		console.log(this.state.keywords)
 	}
@@ -35,8 +34,8 @@ class App extends Component {
 					<Route exact path='/' component={Home} />
 					<Route exact path='/login' component={Login} />
 					<Route exact path='/signup' component={SignUp} />
-					<Route exact path='/keywords' component={Keywords} saveKeywords={this.saveKeywords.bind(this)} />
-					<Route exact path='/speak' component={Speak} keywords={this.state.keywords} />
+					<Route exact path='/keywords' render={() => <Keywords saveKeywords={(keywords) => this.saveKeywords(keywords)} />} />
+					<Route exact path='/speak' render={() => <Speak keywords={this.state.keywords} />} />
 				</div>
 			</Router>
 		);

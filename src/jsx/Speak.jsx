@@ -51,14 +51,14 @@ class Speak extends Component {
 				console.log(prvWord)
 				goAPI = prvWord
 			} else {
-				// for (let keyWord of PLACEHOLDER) {
-				// 	if (myWord === keyWord) {
-				// 		// this checks for keywords
-				// 		console.log(keyWord)
-				// 		goAPI = keyWord
-				// 		break
-				// 	}
-				// }
+				for (let keyWord of PLACEHOLDER) {
+					if (myWord === keyWord) {
+						// this checks for keywords
+						console.log(keyWord)
+						goAPI = keyWord
+						break
+					}
+				}
 			}
 		}
 
