@@ -15,7 +15,7 @@
 		"react-scripts": "2.1.5",
 		"react-speech-recognition": "^1.0.7"
 	},
-	"proxy": "http://localhost:8080",
+	"proxy": "https://suprez.herokuapp.com",
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
