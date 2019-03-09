@@ -21,7 +21,7 @@ class SignUp extends Component {
 	handleSubmit = event => {
 		console.log(this.props.history);
 		event.preventDefault();
-		Axios.post("/signup", this.state).then(res => {
+		Axios.post("https://suprez.herokuapp.com/signup", this.state).then(res => {
 			console.log("signup");
 			this.props.history.push("/speak");
 		});
