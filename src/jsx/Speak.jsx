@@ -10,7 +10,6 @@ class Speak extends Component {
 		this.getWord = '' // most current spoken word
 		this.APIWord = '' // word to search in API
 		this.magicWord = 'search' // speak magic word to search
-		this.transcript = ''
 
 		this.state = {
 			giphyURL: '',
@@ -44,8 +43,8 @@ class Speak extends Component {
 
 	setWords = () => {
 		console.log(this.state)
-		const { transcript } = this.state
-		console.log(transcript)
+		const { transcript } = this.props
+		console.log(transcript) // undefined?
 		const scriptArray = transcript.split(' ')
 		console.log(scriptArray)
 		this.getWord = scriptArray[scriptArray.length - 1]
@@ -81,7 +80,6 @@ class Speak extends Component {
 
 	render() {
 		const {
-			transcript,
 			browserSupportsSpeechRecognition,
 			startListening,
 			stopListening,
@@ -89,6 +87,9 @@ class Speak extends Component {
 			finalTranscript,
 		} = this.props;
 
+		const { transcript } = this.state;
+
+		console.log('got here?')
 		console.log(transcript)
 
 		const {
@@ -137,7 +138,4 @@ class Speak extends Component {
 	}
 }
 
-const options = {
-	autoStart: false
-};
-export default SpeechRecognition(options)(Speak);
+export default SpeechRecognition({ autoStart: false })(Speak);
