@@ -70,14 +70,11 @@ class Speak extends Component {
 	handeInstructions = () => {
 
 	}
-
 	// when you end listening,
 	// update state with final transcript
 	// pass this function to the element that does this worker, via props
-
 	// when you want to get the end of transcript
 	// update state with that transcipt setState({transcript: transcript})
-
 	render() {
 		const {
 			browserSupportsSpeechRecognition,
@@ -132,7 +129,7 @@ class Speak extends Component {
 						alert('You will gain access to more features while you are logged in.')
 						alert('LOGGED IN FEATURES:\n1. While you are logged in, you can access the keywords page.\n2. On this page, you can enter your own unique search terms, or "key words", for the presentation.\n3. When you say any of these words during the presentation, they will search in giphy without using the "magic word", keeping the flow of your presentation steady.')
 					}}>Instructions</button>
-				<button onClick={resetTranscript}>Reset</button>
+				{/* <button onClick={resetTranscript}>Reset</button> */}
 			</div>
 		);
 	}
