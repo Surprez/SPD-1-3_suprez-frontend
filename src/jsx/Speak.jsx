@@ -55,7 +55,7 @@ class Speak extends Component {
 	setURL = () => {
 		if (this.APIWord) {
 			Axios
-				.get(`http://api.giphy.com/v1/gifs/search?q=:${this.APIWord}&api_key=${process.env.REACT_APP_GIPHY_API_KEY}&limit=1`)
+				.get(`https://api.giphy.com/v1/gifs/search?q=:${this.APIWord}&api_key=${process.env.REACT_APP_GIPHY_API_KEY}&limit=1`)
 				.then(res => {
 					this.setState({
 						giphyURL: res.data.data[0].images.original.url
