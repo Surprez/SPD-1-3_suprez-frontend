@@ -37,6 +37,7 @@ class Keywords extends Component {
 		// THIS HERE IS A MAJOR TODO.
 		// it is not calling the parent function.
 		this.props.saveKeywords(myArray);
+		alert('your new keywords for the presentation:\n' + myArray)
 	};
 
 	handleAddKeyword = () => {

@@ -18,7 +18,7 @@ class Login extends Component {
 
 	handleSubmit = event => {
 		event.preventDefault();
-		return fetch('/login', {
+		return fetch('https://suprez.herokuapp.com/login', {
 			method: "POST",
 			body: JSON.stringify(this.state),
 			headers: {
@@ -28,6 +28,7 @@ class Login extends Component {
 			.then(res => {
 				if (res.status === 200) {
 					this.props.history.push("/speak");
+					alert('you are logged in!')
 				} else {
 					const error = new Error(res.error);
 					throw error;

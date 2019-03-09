@@ -24,6 +24,7 @@ class SignUp extends Component {
 		Axios.post("https://suprez.herokuapp.com/signup", this.state).then(res => {
 			console.log("signup");
 			this.props.history.push("/speak");
+			alert('you are logged in!')
 		});
 		// fetch('/signup', {
 		// 	method: "POST",

@@ -10,7 +10,7 @@ const Navbar = (props) => {
 			<span><Link className='button' to='/login'>Log In</Link></span>
 			<span><Link className='button' to='/signup'>Sign Up</Link></span>
 			<span><Link className='button' to='/keywords'>Keywords</Link></span>
-			<span><a className='button' href='./logout'>Log Out</a></span>
+			{/* <span><Link className='button' to='/logout'>Log Out</Link></span> */}
 			<span><Link className='button special' to='/speak'>Start Presentation</Link></span>
 		</nav >
 	)
