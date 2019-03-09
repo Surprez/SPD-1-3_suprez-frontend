@@ -107,7 +107,7 @@ class Speak extends Component {
 		console.log(this.getWord)
 
 		return (
-			<div className='this.props.keywordsButtonArray' >
+			<div className='placeholderButtonArray' >
 				<div className='gifbox'>
 					<img alt='speak_response' src={giphyURL} id='gif' />
 				</div>
