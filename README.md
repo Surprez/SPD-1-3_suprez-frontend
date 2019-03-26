@@ -2,10 +2,6 @@
     <img src="https://i.imgur.com/LBj9G8k.png" width = "250" />
 </p>
 
-TODO: API Routes
-TODO: Screenshots
-TODO: github profiles
-
 # Suprez
 > ### Check out our [Backend Repo!](https://github.com/noltron000/SPD-1-3_suprez-backend)
 
@@ -112,7 +108,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 License
 ----
 
-MIT
-
-
-**Free Software, Hell Yeah!**
+Open Source MIT License
